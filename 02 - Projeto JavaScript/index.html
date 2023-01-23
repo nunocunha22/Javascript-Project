@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Places to Visit</title>
+
+</head>
+
+<body>
+    <h1>My Travelling Collection</h1>
+
+    <div id="map">
+
+        map
+    </div>
+
+    <div class="all">
+        <section class="filters">
+            <h1>Search</h1>
+
+            <article>
+                <div>
+                    <input type="checkbox" id="visitedFilter">
+                    <label for="visitedFilter">Visited</label>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <input type="checkbox" id="notVisitedFilter">
+                    <label for="notVisitedFilter">Planned</label>
+                </div>
+            </article>
+            <article>
+                <div class="search" id="search">
+                    <label for="searchInput">Search by City Name</label>
+                    <input type="text" id="searchInput" class="searchInput">
+                </div>
+            </article>
+            <article>
+                <div>
+                    <label for="searchInputCountry">Search by Country Name</label>
+                    <input type="text" id="searchInputCountry" class="searchInputCountry">
+                </div>
+
+            </article>
+
+        </section>
+        <section class="addEditCity">
+            <form>
+
+                <div>
+                    <label for="city">City:</label>
+                    <input type="text" id="city">
+                </div>
+
+                <div>
+                    <label for="country">Country:</label>
+                    <input type="text" id="country">
+                </div>
+                <div>
+                    <label for="imageSmall">Picture</label>
+                    <input type="text" id="imageSmall">
+                </div>
+
+                <div>
+                    <label for="imageBig">Full Picture</label>
+                    <input type="text" id="imageBig">
+                </div>
+
+                <div>
+                    <input type="checkbox" id="visited">
+                    <label for="visited">Already Visited</label>
+                </div>
+
+                <div class="buttons">
+                    <button id="submitBtn">Add City</button>
+                    <button id="updateBtn" class="hide">Update City</button>
+                </div>
+
+            </form>
+        </section>
+    </div>
+    <section class="grid">
+    </section>
+
+
+    <div class="popup" id="popup">
+        <img src="Fotos/AmsterdamBig.jpg" />
+    </div>
+
+
+    <script src="js/data.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYhKrZZUkKgffg4Yy9MkwCVLlCqwq2Ti4&callback=lerCoordenadas"
+        async defer></script>
+
+</body>
+
+</html>
